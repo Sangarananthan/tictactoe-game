@@ -1,12 +1,13 @@
-import { useState } from "react";
 import Square from "./Square";
-const Board = ({ square, handleSquareClick }) => {
+
+const Board = ({ squares, handleSquareClick }) => {
   const renderSquare = (position) => (
     <Square
-      value={square[position]}
+      value={squares[position]}
       onClick={() => handleSquareClick(position)}
     />
   );
+
   return (
     <div className="board">
       <div className="board-row">
