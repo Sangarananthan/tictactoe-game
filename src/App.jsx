@@ -56,6 +56,11 @@ const App = () => {
 
   return (
     <div className="app">
+      <h1>
+        <span className="text-orange">TIC </span>
+        <span className="text-gre">TAC</span>
+        <span className="text-green"> TOE </span>
+      </h1>
       <StatusMessage winner={winner} gaming_board={gaming_board} />
       <Board
         squares={gaming_board.squares}
@@ -69,7 +74,7 @@ const App = () => {
       >
         Start New Game
       </button>
-      <h2>Current Game History</h2>
+      <h2 style={{ fontWeight: "normal" }}>Current Game History</h2>
       <History history={history} moveto={moveto} currentMove={currentMove} />
     </div>
   );
