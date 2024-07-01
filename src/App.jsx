@@ -5,6 +5,7 @@ import StatusMessage from "./components/StatusMessage";
 import { useState } from "react";
 import { calculateWinner } from "./winner";
 import History from "./components/History";
+import { Analytics } from "@vercel/analytics/react";
 const NEW_GAME = [
   {
     squares: Array(9).fill(null),
@@ -56,6 +57,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <Analytics />
       <h1>
         <span className="text-oranage">TIC </span>
         <span className="text-green">TAC</span>
