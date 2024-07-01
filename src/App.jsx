@@ -57,9 +57,9 @@ const App = () => {
   return (
     <div className="app">
       <h1>
-        <span className="text-orange">TIC </span>
-        <span className="text-gre">TAC</span>
-        <span className="text-green"> TOE </span>
+        <span className="text-oranage">TIC </span>
+        <span className="text-green">TAC</span>
+        <span className="text-oranage"> TOE </span>
       </h1>
       <StatusMessage winner={winner} gaming_board={gaming_board} />
       <Board
@@ -76,6 +76,7 @@ const App = () => {
       </button>
       <h2 style={{ fontWeight: "normal" }}>Current Game History</h2>
       <History history={history} moveto={moveto} currentMove={currentMove} />
+      <div className="bg-balls"></div>
     </div>
   );
 };
